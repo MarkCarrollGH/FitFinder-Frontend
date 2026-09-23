@@ -1,0 +1,284 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.selectionCount {
+  margin: 0 0 1rem;
+  color: #4b4b4b;
+  font-size: 0.95rem;
+}
+
+.checklistGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.checklistCard {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.checklistCard input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #368ff4;
+}
+
+.checkedCard {
+  border-color: #368ff4;
+  background: #eef5ff;
+  box-shadow: 0 0 0 1px rgba(54, 143, 244, 0.15);
+}
+
+.disabledCard {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.inpt {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.inpt input,
+.inpt select {
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  flex: 1;
+  min-width: 200px;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.inpt input::placeholder {
+  color: rgba(75, 75, 75, 0.644);
+}
+
+.createBtn {
+  background-color: #2196f3;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.updateBtn {
+  background-color: #ff9800;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background: #c47ac4;
+  color: white;
+  padding: 0.4rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.deleteBtn:hover {
+  background: #d48fd4;
+}
+
+.deleteBtn:disabled {
+  background: rgba(196, 122, 196, 0.4);
+  cursor: not-allowed;
+}
+
+.resultsSection {
+  margin-top: 1.5rem;
+}
+
+.resultsIntro {
+  margin: 0 0 1rem;
+  color: #5f6773;
+}
+
+.recommendationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 200px));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.recommendationCard {
+  overflow: hidden;
+  border: 1px solid #dfe7f1;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(14, 30, 57, 0.08);
+}
+
+.recommendationImageWrap {
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(180deg, #f7f9fc 0%, #eef3f8 100%);
+}
+
+.recommendationImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.imageFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6d7682;
+  font-size: 0.9rem;
+}
+
+.recommendationContent {
+  padding: 0.9rem 1rem 1rem;
+}
+
+.recommendationContent h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.recommendationLabel {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #368ff4;
+}
+
+
+.dropdownRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.dropdownCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+  min-width: 140px;
+  background: #ffffff;
+  border: 1px solid rgba(196, 122, 196, 0.25);
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  box-shadow: 0 4px 14px rgba(180, 80, 180, 0.07);
+}
+
+.dropdownLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #9b4f9b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pillGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pill {
+  padding: 0.35rem 0.75rem;
+  border: 1.5px solid rgba(196, 122, 196, 0.35);
+  border-radius: 20px;
+  background: #fdf8f2;
+  color: #7a3d7a;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pill:hover {
+  border-color: #9b4f9b;
+  background: rgba(196, 122, 196, 0.1);
+}
+
+.pillActive {
+  background: #9b4f9b;
+  border-color: #9b4f9b;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(155, 79, 155, 0.3);
+}
+
+.likeRow {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.likeBtn {
+  font-size: 2.5rem;
+  background: none;
+  border: 2px solid #27ae60;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.likeBtn:hover {
+  background: rgba(39, 174, 96, 0.1);
+}
+
+.dislikeBtn {
+  font-size: 2.5rem;
+  background: none;
+  border: 2px solid #c0392b;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dislikeBtn:hover {
+  background: rgba(192, 57, 43, 0.1);
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.project p {
+  margin: 0.25rem 0 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}

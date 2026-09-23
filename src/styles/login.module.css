@@ -1,0 +1,93 @@
+.container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.card {
+  border: 1px solid #dfe7f1;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(14, 30, 57, 0.08);
+  padding: 2rem;
+}
+
+.card h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+  color: #1f2937;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4b4b4b;
+}
+
+.field input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  background: #fdf8f2;
+  transition: border-color 0.2s ease;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #368ff4;
+  box-shadow: 0 0 0 1px rgba(54, 143, 244, 0.15);
+}
+
+.btn {
+  width: 100%;
+  background: #c47ac4;
+  color: white;
+  padding: 0.4rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.btn:hover {
+  background: #d48fd4;
+}
+
+.error {
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  background: #fff0f0;
+  border: 1px solid #f5c2c2;
+  border-radius: 8px;
+  color: #c0392b;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.registerLink {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #5f6773;
+}
+
+.registerLink a {
+  color: #368ff4;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}

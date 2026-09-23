@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/recom/:path*",
+      "destination": "http://ac6b768d81b9a45c38d7bbe67954567b-2114530468.eu-west-1.elb.amazonaws.com/:path*"
+    },
+    {
+      "source": "/clothes/:path*",
+      "destination": "http://a307a5243744e431e8fc5be91d747f63-465620978.eu-west-1.elb.amazonaws.com/:path*"
+    },
+    {
+      "source": "/user/:path*",
+      "destination": "http://a1a77241064644b6bbf9398cf720494f-1911804117.eu-west-1.elb.amazonaws.com/:path*"
+    }
+  ]
+}
